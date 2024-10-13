@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Create</title>
+</head>
+<body>
+<div class="topnav">
+		<a class="active" href="homeSecretary.html">HOME</a> 
+		<a href="Course.html">Courses</a>
+		<a href="Professors.html">Professors</a> 
+		<a href="C.html">Statements</a> 
+		<a href="Create.html">Create Users</a>
+		<a style="float: right;" href="LogoutServlet"> LOGOUT</a>
+	</div>
+	<br>
+	<h2>Δημιουργία χρηστών</h2>
+	<form method="post" action="Createservlet" >		
+			<table>
+				<tr>
+					<td><label for="username" class="label">Username</label></td>
+					<td><input id="username" type="text" name="newusername" class="input" required></td>
+				</tr>
+				<tr>
+					<td><label for="name" class="label">Name</label></td>
+					<td><input id="name" type="text" name="newname" class="input" required></td>
+				</tr>
+				<tr>
+					<td><label for="surname" class="label">Surname</label></td>
+					<td><input id="surname" type="text" name="newsurname" class="input" required></td>
+				</tr>
+				<tr>
+					<td><label for="pass" class="label">Password</label></td>
+					<td><input id="pass" type="password"  onkeypress="return RestrictSpace()" name="newpassword1" class="input" data-type="password" required></td>
+				</tr>
+				<tr>
+					<td><label for="pass" class="label">Repeat Password</label></td>
+					<td><input id="pass" type="password" onkeypress="return RestrictSpace()" name="newpassword2" class="input" data-type="password"></td>
+				</tr>
+				<tr>
+					<td><input type="radio" id="secretary" name="role" value="secretary">
+  					<label for="secretary" style="color:#aaa;font-size:12px;" >Secretary</label>   
+  					<input type="radio" id="student" name="role" value="student">
+ 				    <label for="student" style="color:#aaa;font-size:12px;">Student</label>  
+  					<input type="radio" id="professor" name="role" value="professor">
+  					<label for="professor" style="color:#aaa;font-size:12px;">Professor</label>  </td>
+				</tr>
+				<tr>
+				
+					<td><input type="submit"></td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>

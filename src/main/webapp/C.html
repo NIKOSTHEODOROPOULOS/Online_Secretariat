@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>unipi</title>
+</head>
+<body>
+	<div class="topnav">
+		<a class="active" href="homeSecretary.html">HOME</a> <a href="Course.html">Courses</a>
+		<a href="Professors.html">Professors</a> <a href="C.html">Statements</a> 
+		<a href="Create.html">Create Users</a>
+		<a style="float: right;" href="LogoutServlet"> LOGOUT</a>
+	</div>
+<br>
+	<h2>Ανάθεση μαθήματος σε καθηγητή</h2>
+	<form method="get" action="Secretaryservlet">
+		<table>
+			
+			<tr>
+				<td>Μάθημα:</td>
+				<td><input type="text" name="Name" required/></td>
+			</tr>
+			<tr>
+				<td>Εξάμηνο:</td>
+				<td><input type="number" name="Semester" required/></td>
+
+			</tr>
+			<tr>
+				<td>Αριθμός Μητρώου Καθηγητή:</td>
+				<td><input type="text" name="PROFESSOR_ProID" required /></td>
+			</tr>
+			<tr>
+				<td><input type="submit">
+				<input type="reset"></td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

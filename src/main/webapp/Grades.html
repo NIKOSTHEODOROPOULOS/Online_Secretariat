@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>grades</title>
+<style>
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+	<div class="topnav">
+		<a class="active" href="Professor.jsp">HOME</a> 
+		<a href="Grades.html">Student Grades</a>
+		 <a href="Studentgrade.html">Grading</a>
+		<a style="float: right;" href="LogoutServlet"> LOGOUT</a>
+	</div>
+	<form method="post" action="GradesServlet"
+		style="width: 50%; left: 20%; margin-left: 100px; position: fixed;">
+		<h2>Grades</h2>
+		Enter Student ID <input type="text" name="stuID" required><br>
+		<input type="submit">
+	</form>
+</body>	
+</html>
